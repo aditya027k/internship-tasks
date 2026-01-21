@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Employee Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+  <div class="login-container">
+    <div class="login-box">
+      <h1>Welcome Back</h1>
+      <p class="subtitle">Sign in to your account</p>
+      <form id="loginForm" onsubmit="return handleLoginClick(event)">
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn">Sign In</button>
+      </form>
+      <p style="margin-top:15px; font-size:12px; color:#999; text-align:center;">
+        Demo: Use <strong>admin@admin.com</strong> for admin access
+      </p>
+      <p>Don't have an account? <a href="register.html">Create one now</a></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
