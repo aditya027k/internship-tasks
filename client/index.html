@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Auth Web - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">SecureAuth</div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="/">Home</a></li>
+        <li><a href="/login" id="loginLink">Login</a></li>
+        <li><a href="/dashboard" id="dashboardLink" style="display:none;">Dashboard</a></li>
+        <li><button id="logoutBtn" style="display:none;">Logout</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="hero">
+      <h1>Welcome to Secure Auth Web</h1>
+      <p>A secure authentication solution for your application</p>
+      <a href="/login" class="btn">Get Started</a>
+    </div>
+
+    <div class="features">
+      <div class="feature-card">
+        <h3>🔐 Secure</h3>
+        <p>Industry-standard encryption and security protocols</p>
+      </div>
+      <div class="feature-card">
+        <h3>⚡ Fast</h3>
+        <p>Lightning-fast authentication and verification</p>
+      </div>
+      <div class="feature-card">
+        <h3>🛡️ Reliable</h3>
+        <p>Enterprise-grade reliability and uptime</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
