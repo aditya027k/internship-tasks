@@ -1,0 +1,31 @@
+:root { --fb-blue: #1877f2; --bg: #f0f2f5; }
+body { background: var(--bg); font-family: sans-serif; margin: 0; }
+
+.auth-overlay {
+    position: fixed; inset: 0; background: linear-gradient(135deg, #1877f2, #0056b3);
+    z-index: 2000; display: flex; align-items: center; justify-content: center;
+}
+.auth-card { background: white; padding: 40px; border-radius: 10px; width: 350px; text-align: center; }
+.auth-card input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 5px; }
+.auth-card button { width: 100%; padding: 12px; background: var(--fb-blue); color: white; border: none; font-weight: bold; cursor: pointer; }
+
+.navbar { background: white; padding: 10px 20px; position: sticky; top: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+.nav-content { max-width: 600px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+.logo { color: var(--fb-blue); font-size: 24px; font-weight: bold; }
+
+.container { max-width: 500px; margin: 20px auto; padding: 0 10px; }
+.stories { display: flex; gap: 10px; margin-bottom: 20px; overflow-x: auto; }
+.story { min-width: 60px; height: 60px; border-radius: 50%; border: 3px solid var(--fb-blue); background: #ccc; display: flex; align-items: center; justify-content: center; }
+
+.create-card { background: white; padding: 15px; border-radius: 8px; margin-bottom: 15px; }
+.create-card button { width: 100%; background: #f0f2f5; border: none; padding: 10px; border-radius: 20px; text-align: left; color: #65676b; cursor: pointer; }
+
+.post { background: white; border-radius: 8px; margin-bottom: 15px; padding: 15px; }
+.post-header { font-weight: bold; margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+.post-footer { border-top: 1px solid #eee; margin-top: 15px; padding-top: 10px; display: flex; gap: 20px; color: #65676b; cursor: pointer; }
+
+.modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 1500; }
+.modal-content { background: white; width: 400px; margin: 100px auto; padding: 20px; border-radius: 8px; }
+.modal-content textarea { width: 100%; height: 100px; margin: 15px 0; border: 1px solid #ddd; padding: 10px; }
+.submit-btn { width: 100%; background: var(--fb-blue); color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; }
+.close-btn { width: 100%; background: transparent; color: #666; border: none; padding: 10px; cursor: pointer; }

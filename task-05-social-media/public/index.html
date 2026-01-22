@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect | Social Media</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="auth-overlay" class="auth-overlay">
+        <div class="auth-card">
+            <h2 id="auth-title">Connect</h2>
+            <input type="text" id="auth-username" placeholder="Username">
+            <input type="password" id="auth-password" placeholder="Password">
+            <button id="auth-btn" onclick="handleAuth()">Login</button>
+            <p onclick="toggleAuthMode()" id="auth-toggle">New here? Create account</p>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-content">
+            <h1 class="logo">Connect</h1>
+            <div class="nav-icons">
+                <i class="fas fa-home"></i>
+                <span id="user-display" style="font-weight:600; margin: 0 15px;"></span>
+                <i class="fas fa-sign-out-alt" onclick="logout()" title="Logout" style="cursor:pointer"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="stories">
+            <div class="story active"><i class="fas fa-plus"></i></div>
+            <div class="story"></div><div class="story"></div><div class="story"></div>
+        </div>
+
+        <div class="create-card">
+            <button onclick="document.getElementById('post-modal').style.display='block'">
+                What's on your mind?
+            </button>
+        </div>
+
+        <div id="feed"></div>
+    </main>
+
+    <div id="post-modal" class="modal">
+        <div class="modal-content">
+            <h3>Create Post</h3>
+            <textarea id="postContent" placeholder="Write something..."></textarea>
+            <button class="submit-btn" onclick="createPost()">Post</button>
+            <button class="close-btn" onclick="document.getElementById('post-modal').style.display='none'">Cancel</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
